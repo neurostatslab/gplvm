@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eiv"
+version = "0.1.0"
+description = "Code for error-in-variables regression model for behavioral and neural data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Isabel Garon", email = "isabelgaron@nyu.edu" }
+]
+
+dependencies = [
+    "jax==0.6.0",
+    "jaxlib==0.6.0",
+    "optax",
+    "tensorflow-probability",
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+# pip install "eiv[cuda]"
+cuda = [
+    "jax[cuda12]==0.6.0",
+]
+# pip install "eiv[demos]"  -> extras only needed to run the demo notebooks
+demos = [
+    "pynapple",
+]
+
+[project.urls]
+Homepage = "https://github.com/neurostatslab/error-in-variables-garon-2026"
+
+[project.scripts]
+eiv-download-data = "eiv.cli:download_data_main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["eiv*"]

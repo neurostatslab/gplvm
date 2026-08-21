@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import jax.numpy as jnp
 import numpy as np
-import eiv.mappings
+from . import mappings
 
 def get_obs_tuning(n_bins, n_neurons, spikes, headdir):
     bins = np.linspace(0, 1, n_bins+1)

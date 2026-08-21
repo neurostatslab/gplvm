@@ -40,5 +40,4 @@ Homepage = "https://github.com/neurostatslab/error-in-variables-garon-2026"
 eiv-download-data = "eiv.cli:download_data_main"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["eiv*"]
+where = ["src"]

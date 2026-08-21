@@ -163,6 +163,7 @@ Higher values produce smoother latent trajectories, while lower values allow gre
 
 ## Structure
 ```
+src/eiv/
   ├── __init__.py      
   ├── core.py             # Abstract model class, fit methods, layer and proposal structure
   ├── inference.py        # Implemented inference methods and batching

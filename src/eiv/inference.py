@@ -1,7 +1,7 @@
-from mc_samplers import Roberts, Sobol
+from eiv.mc_samplers import Roberts, Sobol
 import jax
 import optax
-import smc
+import eiv.smc
 import time
 import jax.numpy as jnp
 import numpy as np

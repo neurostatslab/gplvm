@@ -75,7 +75,7 @@ from . import mappings
 from . import noise_models
 from . import inference
 import matplotlib.pyplot as plt
-from . import mc_samplers import Roberts
+from .mc_samplers import Roberts
 
 
 class AbstractGPLVM:

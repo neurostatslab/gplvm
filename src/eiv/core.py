@@ -70,12 +70,12 @@ import inspect
 from functools import partial
 
 
-import eiv.smc
-import eiv.mappings
-import eiv.noise_models
-import eiv.inference
+from . import smc
+from . import mappings
+from . import noise_models
+from . import inference
 import matplotlib.pyplot as plt
-from eiv.mc_samplers import Roberts
+from . import mc_samplers import Roberts
 
 
 class AbstractGPLVM:
